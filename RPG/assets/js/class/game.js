@@ -5,18 +5,31 @@ class Game {
         this.#scenes = [];
     }
     
+<<<<<<< HEAD
     get scenes (){
-        return this.scenes;
+        return this.#scenes;
     }
     
+    set scenes (scenes){
+        this.#scenes = scenes; 
+    }
     
+=======
+    get scenes () {
+        return this.#scenes;
+    }
+    
+    set scenes(scenes) {
+        this.#scenes = scenes;
+    }
+>>>>>>> 794a9b8bbeff51d588e07be45c61c0872038c016
     ActuallyScene(scene){
         this.#scenes.push(scene);
     }
     
     DisplayScene(){
         
-        for(let i = 0; i < this.scenes.length; i++){
+        for(let i = 0; i < this.#scenes.length; i++){
             
             let intro = document.getElementById('titreIntro');
             let description = document.getElementById('description');
@@ -27,14 +40,46 @@ class Game {
             let choice4 = document.getElementById('choice4');
             let img = document.getElementById('img');
             
+            let introText = document.createTextNode(this.#scenes[i]);
+            let descriptionText = document.createTextNode(this.#scenes[i]);
+            let questionText = document.createTextNode(this.#scenes[i]);
+            let choice1Text = document.createTextNode(this.#scenes[i]);
+            let choice2Text = document.createTextNode(this.#scenes[i]);
+            let choice3Text = document.createTextNode(this.#scenes[i]);
+            let choice4Text = document.createTextNode(this.#scenes[i]);
             
-            
+            intro.appendChild(introText);
+            img.setAttribute("src", this.#scenes[i].file);
+            img.setAttribute("alt", this.#scenes[i].name);
+            description.appendChild(descriptionText);
+            question.appendChild(questionText);
+            choice1.appendChild(choice1Text);
+            choice2.appendChild(choice2Text);
+            choice3.appendChild(choice3Text);
+            choice4.appendChild(choice4Text);
         }
         
     }
     
-    save(){
+    
+    // Sauvegarde de l'endroit où l'on est
+    
+    toJSON(){
         
+        for(let i = 0; i < this.#scenes.length; i++){
+            let save = {
+                let intro = this.#scenes[i];
+                let description = this.#scenes[i];
+                let question = this.#scenes[i];
+                let choice1 = this.#scenes[i];
+                let choice2 = this.#scenes[i];
+                let choice3 = this.#scenes[i];
+                let choice4 = this.#scenes[i];
+                let img = this.#scenes[i];
+            }
+            
+            return JSON.stringify(save);
+        }
         
     }
 }

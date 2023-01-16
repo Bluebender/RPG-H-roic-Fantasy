@@ -1,5 +1,7 @@
 import { Scene } from './class/scene.js'
+import { Game } from './class/game.js'
 import { SceneTest } from './class/scenetest.js'
+import { GameTest } from './class/gametest.js'
 
 
 window.addEventListener("DOMContentLoaded", function(){
@@ -10,5 +12,11 @@ window.addEventListener("DOMContentLoaded", function(){
     
     let test = new SceneTest();
     test.test();
+<<<<<<< HEAD
+=======
+
+   let gametest = new GameTest();
+    gametest.test2();
+>>>>>>> ee66bdb0b112d55235448800e9c1a9e914450fd3
     
 });
