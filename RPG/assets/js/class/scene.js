@@ -68,5 +68,9 @@ class Scene {
     set choice4(choice4) {
         this.#choice4 = choice4;
     }
+<<<<<<< HEAD
+}
+=======
 };
+>>>>>>> bea606614406e3a4758f8195bbd12245809ac088
 export { Scene };
