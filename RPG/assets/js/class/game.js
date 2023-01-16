@@ -6,9 +6,12 @@ class Game {
     }
     
     get scenes (){
-        return this.scenes;
+        return this.#scenes;
     }
     
+    set scenes (scenes){
+        this.#scenes = scenes; 
+    }
     
     ActuallyScene(scene){
         this.#scenes.push(scene);
@@ -48,8 +51,25 @@ class Game {
         
     }
     
-    save(){
+    
+    // Sauvegarde de l'endroit où l'on est
+    
+    toJSON(){
         
+        for(let i = 0; i < this.#scenes.length; i++){
+            let save = {
+                let intro = this.#scenes[i];
+                let description = this.#scenes[i];
+                let question = this.#scenes[i];
+                let choice1 = this.#scenes[i];
+                let choice2 = this.#scenes[i];
+                let choice3 = this.#scenes[i];
+                let choice4 = this.#scenes[i];
+                let img = this.#scenes[i];
+            }
+            
+            return JSON.stringify(save);
+        }
         
     }
 }
