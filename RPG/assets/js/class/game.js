@@ -86,6 +86,28 @@ class Game {
     
     // Sauvegarde de l'endroit où l'on est
     
+<<<<<<< HEAD
+    toJSON(){
+        let save = [];
+        
+        for(let i = 0; i < this.#scenes.length; i++){
+                let intro = this.#scenes[i];
+                let description = this.#scenes[i];
+                let question = this.#scenes[i];
+                let choice1 = this.#scenes[i];
+                let choice2 = this.#scenes[i];
+                let choice3 = this.#scenes[i];
+                let choice4 = this.#scenes[i];
+                let img = this.#scenes[i];
+                
+                save.push(intro, description, question, choice1, choice2, choice3, choice4, img);
+        }
+        
+        
+        
+       return JSON.stringify(save); 
+    }
+=======
     // toJSON(){
         
 <<<<<<< HEAD
@@ -112,5 +134,6 @@ class Game {
 >>>>>>> d0b97e412569f38da067123e4aff28569b17403c
         
     // }
+>>>>>>> 3679a42ced8617f534efcfb15e84602a4920f440
 }
 export { Game };
