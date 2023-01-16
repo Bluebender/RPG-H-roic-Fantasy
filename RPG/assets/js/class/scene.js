@@ -4,6 +4,7 @@ class Scene {
     #id;
     #description;
     #illustration;
+    #imgalt;
     #question;
     #choice1;
     #choice2;
@@ -30,6 +31,9 @@ class Scene {
     get illustration() {
         return this.#illustration;
     }
+    get imgalt() {
+        return this.#imgalt;
+    }
     get question() {
         return this.#question;
     }
@@ -54,6 +58,9 @@ class Scene {
     }
     set illustration(illustration) {
         this.#illustration = illustration;
+    }
+    set imgalt(imgalt) {
+        this.#imgalt = imgalt;
     }
     set question(question) {
         this.#question = question;
