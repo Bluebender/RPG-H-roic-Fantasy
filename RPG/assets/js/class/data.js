@@ -1,0 +1,38 @@
+let etapes = [
+    {
+        id: "0" 
+        description: "Vous êtes un chevalier sans cheval et vous avez perdu la mémoire. Vous vous retrouver dans les bois sans arme",
+        illustration: "assets/img/door.png",
+        question: "Que souhaitez-vous faire ?",
+        choice1: "Marcharcher pour essayer de trouver du monde",
+        choice2: "Courrir en criant",
+        choice3: "Chercher Robin",
+        choice4: "Rester assis à rien faire"
+    },
+    
+    {   
+        id: "1"
+        description: "En marchant vous trouvez une épée enfoncée dans un rocher",
+        illustration: "assets/img/axe.png",
+        question: "Que souhaitez-vous faire ?",
+        choice1: "Attraper l'épée",
+        choice2: "Passer mon chemin, cette épée doit appartenir à quelqu'un",
+        choice3: "null",
+        choice4: "null"
+    },
+    
+    {
+        id: "2"
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un troll qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        question: "Que souhaitez-vous faire ?",
+        choice1: "Je tente une discussion avec le troll",
+        choice2: "Je lui saute dessus pour lui faire la peau",
+        choice3: "Je pars en courant",
+        choice4: "null"
+
+    }
+    
+];
+
+export { etapes };

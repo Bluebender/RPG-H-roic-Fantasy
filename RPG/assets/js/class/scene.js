@@ -1,5 +1,7 @@
+import { data } from './class/scene.js'
+
 class Scene {
-    #titreIntro;
+    #id;
     #description;
     #illustration;
     #question;
@@ -8,19 +10,19 @@ class Scene {
     #choice3;
     #choice4;
 
-    constructor(titreIntro, description, illustration, question, choice1, choice2, choice3, choice4) {
+    constructor(id) {
         
-        this.#titreIntro = titreIntro;
-        this.#description = description;
-        this.#illustration = illustration;
-        this.#question = question;
-        this.#choice1 = choice1;
-        this.#choice2 = choice2;
-        this.#choice3 = choice3;
-        this.#choice4 = choice4;
+        this.#id = id;
+        this.#description = data[id].description;
+        this.#illustration = data[id].illustration;
+        this.#question = data[id].question;
+        this.#choice1 = date[id].choice1;
+        this.#choice2 = data[id].choice2;
+        this.#choice3 = data[id].choice3;
+        this.#choice4 = data[id].choice4;
     }
-    get titreIntro() {
-        return this.#titreIntro;
+    get id() {
+        return this.#id;
     }
     get description() {
         return this.#description;
@@ -44,8 +46,8 @@ class Scene {
         return this.#choice4;
     }
 
-    set titreIntro(titreIntro) {
-        this.#titreIntro = titreIntro;
+    set id(id) {
+        this.#id = id;
     }
     set description(description) {
         this.#description = description;

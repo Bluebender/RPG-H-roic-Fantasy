@@ -1,13 +1,13 @@
 @import "vars";
 @import "reset";
 
-header{
-    height : 20vh;
-    background-color: $color2;
+header {
+    height: 20vh;
+    background-color: $color4;
     display: flex;
     justify-content: center;
     align-items: center;
-    > h1{
+    >h1 {
         Color: white;
         font-size: 2rem;
         font-weight: bold;
@@ -15,53 +15,63 @@ header{
     }
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    > section{
-    height: 80vh;
-    background-color: $color1;
-    padding: 20px;
-    &:nth-of-type(1){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        > h2{
-            Color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 10vh;
-            text-align: center;
+    >section {
+        height: 80vh;
+        background-color: $color1;
+        padding: 20px;
+        &:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            >h2 {
+                Color: $color5;
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 10vh;
+                text-align: center;
+            }
+            >p {
+                Color: $color5;
+                font-size: 2rem;
+                text-align: center;
+            }
         }
-        > p{
-            Color: white;
-            font-size: 2rem;
-            text-align: center;
+        &:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            >h2 {
+                Color: $color5;
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 10vh;
+                text-align: center;
+            }
+            >ul {
+                >li {
+                    Color: $color5;
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 10px 0;
+                    &:hover {
+                        cursor: grab;
+                    }
+                }
+            }
+
+        }
+        &:nth-of-type(3){
+            > figure{
+                > img{
+                    color: $color5;
+                }
+            }
         }
 
     }
-    &:nth-of-type(2){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        > h2{
-            Color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 10vh;
-            text-align: center;
-        }
-        > p{
-            Color: white;
-            font-size: 2rem;
-            text-align: center;
-        }
-
-    }
-    // &:nth-of-type(3)
-        
-    }
-    
 }
