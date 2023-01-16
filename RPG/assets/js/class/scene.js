@@ -59,5 +59,5 @@ class Scene {
     set choice4(choice4) {
         this.#choice4 = choice4;
     }
-
+};
 export { Scene };
