@@ -13,8 +13,8 @@ class Scene {
         this.#question = question;
         this.#choice1 = choice1;
         this.#choice2 = choice2;
-        this.#choice3 = null;
-        this.#choice4 = null;
+        this.#choice3 = choice3;
+        this.#choice4 = choice4;
     }
     get description() {
         return this.#description;
