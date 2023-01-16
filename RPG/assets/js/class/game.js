@@ -5,11 +5,13 @@ class Game {
         this.#scenes = [];
     }
     
-    get scenes (){
-        return this.scenes;
+    get scenes () {
+        return this.#scenes;
     }
     
-    
+    set scenes(scenes) {
+        this.#scenes = scenes;
+    }
     ActuallyScene(scene){
         this.#scenes.push(scene);
     }
