@@ -2,17 +2,19 @@ class Scene {
     #titreIntro;
     #description;
     #illustration;
+    #imgalt;
     #question;
     #choice1;
     #choice2;
     #choice3;
     #choice4;
 
-    constructor(titreIntro, description, illustration, question, choice1, choice2, choice3, choice4) {
+    constructor(titreIntro, description, illustration, imgalt, question, choice1, choice2, choice3, choice4) {
         
         this.#titreIntro = titreIntro;
         this.#description = description;
         this.#illustration = illustration;
+        this.#imgalt = imgalt;
         this.#question = question;
         this.#choice1 = choice1;
         this.#choice2 = choice2;
@@ -27,6 +29,9 @@ class Scene {
     }
     get illustration() {
         return this.#illustration;
+    }
+    get imgalt() {
+        return this.#imgalt;
     }
     get question() {
         return this.#question;
@@ -52,6 +57,9 @@ class Scene {
     }
     set illustration(illustration) {
         this.#illustration = illustration;
+    }
+    set imgalt(imgalt) {
+        this.#imgalt = imgalt;
     }
     set question(question) {
         this.#question = question;
