@@ -8,6 +8,11 @@ window.addEventListener("DOMContentLoaded", function(){
     let scene2 = new Scene("Vous êtes autre part", "./img/portal.png", "Voulez vous faire ça ?", "Oui", "Non", "null", "null");
     let scene3 = new Scene("Vous êtes mort", "./img/tower.png", "Pas de bol", "null", "null", "null", "null");
 
-
+    let scenetest = new SceneTest();
+    scenetest.test()
+    
+    console.log(scene1)
+    console.log(scene2)
+    console.log(scene3)
     
 });
