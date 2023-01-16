@@ -17,6 +17,7 @@ class Game {
     set scenes(scenes) {
         this.#scenes = scenes;
     }
+
     ActuallyScene(scene){
         this.#scenes.push(scene);
     }
@@ -88,6 +89,7 @@ class Game {
     
     // toJSON(){
         
+<<<<<<< HEAD
     //     for(let i = 0; i < this.#scenes.length; i++){
     //         let save = {
     //             let intro = this.#scenes[i];
@@ -102,6 +104,13 @@ class Game {
             
     //         return JSON.stringify(save);
     //     }
+=======
+        let save = {
+            
+        }
+            
+            return JSON.stringify(save);
+>>>>>>> d0b97e412569f38da067123e4aff28569b17403c
         
     // }
 }
