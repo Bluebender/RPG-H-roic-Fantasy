@@ -45,6 +45,16 @@ class Scene {
     get choice2() {
         return this.#choice2;
     }
+    
+    get redirection1() {
+        return this.#redirection1;
+    }
+    
+    get redirection2() {
+        return this.#redirection2;
+    }
+    
+    
 
     set id(id) {
         this.#id = id;
