@@ -23,8 +23,16 @@ let etapes = [
         illustration: "assets/img/sword.png",
         imgalt: "Epée",
         question: "Que souhaitez-vous faire ?",
-        choice1: "Attraper l'épée",
-        choice2: "Passer mon chemin, cette épée doit appartenir à quelqu'un"
+        choice : [
+        {
+            text: "Attraper l'épée",
+            destination : 3
+        },
+        {
+            text: "Passer mon chemin, cette épée doit appartenir à quelqu'un",
+            destination : 4
+        }
+        ]
     },
     
     {
@@ -33,9 +41,16 @@ let etapes = [
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
-        choice1: "Je tente une discussion avec le troll",
-        choice2: "Je lui saute dessus pour lui faire la peau"
-
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
     }
     
 ];
