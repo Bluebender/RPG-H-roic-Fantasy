@@ -8,9 +8,10 @@ class Scene {
     #question;
     #choice1;
     #choice2;
-    #choice3;
-    #choice4;
-
+    #redirection1;
+    #redirection2;
+    
+    
     constructor(id) {
         
         this.#id = id;
@@ -18,10 +19,10 @@ class Scene {
         this.#illustration = etapes[id].illustration;
         this.#imgalt = etapes[id].imgalt;
         this.#question = etapes[id].question;
-        this.#choice1 = etapes[id].choice1;
-        this.#choice2 = etapes[id].choice2;
-        this.#choice3 = etapes[id].choice3;
-        this.#choice4 = etapes[id].choice4;
+        this.#choice1 = etapes[id].choice[0].text;
+        this.#choice2 = etapes[id].choice[1].text;
+        this.#redirection1 = etapes[id].choice[0].destination;
+        this.#redirection2 = etapes[id].choice[1].destination;
     }
     get id() {
         return this.#id;
@@ -43,12 +44,6 @@ class Scene {
     }
     get choice2() {
         return this.#choice2;
-    }
-    get choice3() {
-        return this.#choice3;
-    }
-    get choice4() {
-        return this.#choice4;
     }
 
     set id(id) {
@@ -72,11 +67,6 @@ class Scene {
     set choice2(choice2) {
         this.#choice2 = choice2;
     }
-    set choice3(choice3) {
-        this.#choice3 = choice3;
-    }
-    set choice4(choice4) {
-        this.#choice4 = choice4;
-    }
+
 };
 export { Scene };
