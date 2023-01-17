@@ -1,4 +1,4 @@
-import { data } from './class/scene.js'
+import { data } from './data.js'
 
 class Scene {
     #id;
