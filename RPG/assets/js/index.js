@@ -9,8 +9,10 @@ window.addEventListener("DOMContentLoaded", function(){
     demarrer.start();
 
     let form = document.getElementById('form');
-        form.addEventListener('submit', function(e){
+        form.addEventListener('submit', function(e)
+        {
             e.preventDefault();
+
             demarrer.Choose();
         })
 
