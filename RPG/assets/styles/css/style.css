@@ -52,75 +52,88 @@ table {
   border-spacing: 0;
 }
 
-html {
-  overflow-x: hidden;
+@media (max-width: 719px) {
+  main {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
-html header {
-  height: 20vh;
+@media (min-width: 720px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100vw;
   background-color: #AE2012;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-html header > h1 {
+header > h1 {
+  font-family: "MedievalSharp", cursive;
   Color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
+  text-align: center;
+  margin: 4vh;
 }
-html header > h1 > span {
+header > h1 > span {
   font-size: 7rem;
 }
-html main {
+
+main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
-html main > section {
-  height: 80vh;
+main > section {
   background-color: #EE9B00;
   padding: 20px;
 }
-html main > section:nth-of-type(1) {
+main > section:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-html main > section:nth-of-type(1) > h2 {
+main > section:nth-of-type(1) > h2 {
   Color: #9B2226;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10vh;
   text-align: center;
 }
-html main > section:nth-of-type(1) > p {
+main > section:nth-of-type(1) > p {
   Color: #9B2226;
   font-size: 2rem;
   text-align: center;
 }
-html main > section:nth-of-type(2) {
+main > section:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-html main > section:nth-of-type(2) #question {
+main > section:nth-of-type(2) #question {
   Color: #9B2226;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10vh;
   text-align: center;
 }
-html main > section:nth-of-type(2) > form > ul > li {
+main > section:nth-of-type(2) > form > ul > li {
   Color: #9B2226;
   font-size: 2rem;
   text-align: center;
   margin: 10px 0;
   margin-top: 1rem;
 }
-html main > section:nth-of-type(2) > form > ul > li:hover {
+main > section:nth-of-type(2) > form > ul > li:hover {
   cursor: grab;
 }
-html main > section:nth-of-type(2) > form > ul .btn-red {
+main > section:nth-of-type(2) > form > ul .btn-red {
   margin-top: 2rem;
   background-color: #ba0534;
   align-items: center;
@@ -141,20 +154,24 @@ html main > section:nth-of-type(2) > form > ul .btn-red {
   touch-action: manipulation;
   width: auto;
 }
-html main > section:nth-of-type(2) > form > ul .btn-red:hover,
-html main > section:nth-of-type(2) > form > ul .btn-red:focus {
+main > section:nth-of-type(2) > form > ul .btn-red:hover,
+main > section:nth-of-type(2) > form > ul .btn-red:focus {
   background-color: #B22222;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
-html main > section:nth-of-type(2) > form > ul .btn-red:hover {
+main > section:nth-of-type(2) > form > ul .btn-red:hover {
   transform: translateY(-1px);
 }
-html main > section:nth-of-type(2) > form > ul .btn-red:active {
+main > section:nth-of-type(2) > form > ul .btn-red:active {
   background-color: #B22222;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
-html main > section:nth-of-type(3) > figure > img {
+main > section:nth-of-type(3) > figure {
+  width: 100%;
+}
+main > section:nth-of-type(3) > figure > img {
+  width: 100%;
   color: #9B2226;
 }
 

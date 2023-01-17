@@ -15,5 +15,4 @@ window.addEventListener("DOMContentLoaded", function(){
 
             demarrer.Choose();
         })
-
 });
