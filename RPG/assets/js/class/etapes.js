@@ -1,6 +1,10 @@
 let etapes = [
     {
+<<<<<<< HEAD
         id: 0,
+=======
+        id: 0 ,
+>>>>>>> 03219a7469238b5a233cd92cd37d15b383fe6484
         description: "Vous êtes un chevalier sans cheval et vous avez perdu la mémoire. Vous vous retrouver dans les bois sans arme",
         illustration: "assets/img/door.png",
         imgalt: "Porte",
@@ -10,7 +14,11 @@ let etapes = [
     },
     
     {   
+<<<<<<< HEAD
         id: 1,
+=======
+        id: 1 ,
+>>>>>>> 03219a7469238b5a233cd92cd37d15b383fe6484
         description: "En marchant vous trouvez une épée enfoncée dans un rocher",
         illustration: "assets/img/sword.png",
         imgalt: "Epée",
@@ -20,7 +28,11 @@ let etapes = [
     },
     
     {
+<<<<<<< HEAD
         id: 2,
+=======
+        id: 2 ,
+>>>>>>> 03219a7469238b5a233cd92cd37d15b383fe6484
         description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",

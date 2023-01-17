@@ -45,22 +45,63 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            >h2 {
-                Color: $color5;
-                font-size: 2rem;
-                font-weight: bold;
-                margin-bottom: 10vh;
-                text-align: center;
-            }
-            >ul {
-                >li {
+            >form {
+                
+                >h2 {
                     Color: $color5;
                     font-size: 2rem;
+                    font-weight: bold;
+                    margin-bottom: 10vh;
                     text-align: center;
-                    margin: 10px 0;
-                    &:hover {
-                        cursor: grab;
+                }
+                >ul {
+                    >li {
+                        Color: $color5;
+                        font-size: 2rem;
+                        text-align: center;
+                        margin: 10px 0;
+                        &:hover {
+                            cursor: grab;
+                        }
                     }
+                    
+                    .btn-red {
+                      background-color: #ba0534;
+                      align-items: center;
+                      border: 1px solid transparent;
+                      border-radius: .30rem;
+                      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+                      box-sizing: border-box;
+                      color: #fff;
+                      cursor: pointer;
+                      font-size: 1.2rem;
+                      font-weight: 600;
+                      display: inline-flex;
+                      justify-content: center;
+                      min-height: 3rem;
+                      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+                      text-decoration: none;
+                      transition: all 250ms;
+                      touch-action: manipulation;
+                      width: auto;
+                    }
+                    
+                    .btn-red:hover,
+                    .btn-red:focus {
+                      background-color: #B22222;
+                      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+                    }
+                    
+                    .btn-red:hover {
+                      transform: translateY(-1px);
+                    }
+                    
+                    .btn-red:active {
+                      background-color: #B22222;
+                      box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+                      transform: translateY(0);
+                    }
+                    
                 }
             }
 
