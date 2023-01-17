@@ -94,6 +94,8 @@ class Game {
                 question.innerHTML="";
                 choice1.innerHTML="";
                 choice2.innerHTML="";
+                choice1Input.checked=false;
+                choice2Input.checked=false;
                 
                 description.appendChild(descriptionText);
                 question.appendChild(questionText);
@@ -101,34 +103,8 @@ class Game {
                 choice2.appendChild(choice2Text);
             }
         }
-
     }
-
 }
     
-    
-    
-    // Sauvegarde de l'endroit où l'on est
-
-    /*
-    toJSON(){
-        let save = [];
-        
-        for(let i = 0; i < this.#scenes.length; i++){
-                let intro = this.#scenes[i];
-                let description = this.#scenes[i];
-                let question = this.#scenes[i];
-                let choice1 = this.#scenes[i];
-                let choice2 = this.#scenes[i];
-                let choice3 = this.#scenes[i];
-                let choice4 = this.#scenes[i];
-                let img = this.#scenes[i];
-                
-                save.push(intro, description, question, choice1, choice2, choice3, choice4, img);
-        }
-        
-       return JSON.stringify(save); 
-    }
-    */
 
 export { Game };

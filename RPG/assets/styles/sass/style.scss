@@ -1,19 +1,26 @@
 @import "vars";
 @import "reset";
+@import "medias";
 
-html {
-    overflow-y:hidden;
-    overflow-x:hidden;
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 header {
-    height: 20vh;
+    width: 100vw;
+    // height: 20vh;
     background-color: $color4;
     display: flex;
     justify-content: center;
     align-items: center;
     >h1 {
+        font-family: 'MedievalSharp', cursive;
         Color: white;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
+        text-align: center;
+        margin: 4vh;
         > span {
              font-size: 7rem;
         }
@@ -23,9 +30,8 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     >section {
-        height: 80vh;
+        // height: 70vh;
         background-color: $color1;
         padding: 20px;
         &:nth-of-type(1) {
@@ -118,12 +124,13 @@ main {
         }
         &:nth-of-type(3){
             > figure{
+                width: 100%;
                 > img{
+                    width: 100%;
                     color: $color5;
                 }
             }
         }
 
     }
-}
 }
