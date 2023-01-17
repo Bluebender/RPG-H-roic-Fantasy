@@ -236,12 +236,12 @@ let etapes = [
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "",
+            text: "Je fais le contour pour trouver une autre ouverture que la porte d'entée",
             destination : 15
         },
         {
-            text: "",
-            destination : 15
+            text: "Passer par la grande porte en criant 'YYYYYEEEEEEPPPPPPPAAAAAA'",
+            destination : 16
         }
         ]
     },
@@ -259,6 +259,176 @@ let etapes = [
         {
             text: "Je lui saute dessus pour lui faire la peau",
             destination : 6
+        }
+        ]
+    },
+    {
+        id: 15,
+       description: "En contournant la tour, vous trouvez un trou avec des barreaux couper. Dans le fond, il y a une petite lumière ..",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Prendre son courage à deux main et rentrée",
+            destination : 17
+        },
+        {
+            text: "Rebrousser chemain et passer par la porte d'entrée.",
+            destination : 13
+        }
+        ]
+    },
+    {
+        id: 16,
+       description: "Vous arrivez dans une grande salle. Devant vous, ce trouve un grand escalier et à droite une porte.",
+        illustration: "assets/img/door.png",
+        imgalt: "Door",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Monter le grand escalier",
+            destination : 18
+        },
+        {
+            text: "Prendre la porte à droite",
+            destination : 19
+        }
+        ]
+    },
+    {
+        id: 17,
+       description: "Dans le caveau, vous entendez des bruits. On dirait un orc ... ou un gobelin",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Sauter dans le tas, de toute façon, rien ne peut vous faire peur",
+            destination : 20
+        },
+        {
+            text: "Tâtonner le mur, trouver une porte, l'ouvrir rapidement, et s'y faufiler",
+            destination : 21
+        }
+        ]
+    },
+    {
+        id: 18,
+       description: "Plus vous monter l'escalier, plus les marches derrières vous disparaisse. Finalement, vous arrivez tout en haut de la tour .. et vous apercevez la princesse .. sur le toit de la tour juste à côté de la votre .. (manque de bol cruel)",
+        illustration: "assets/img/tower.png",
+        imgalt: "Tower",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je reprends les marches pour descendre .. Quitte à sortir de la tour",
+            destination : 22
+        },
+        {
+            text: "Planter ma tente, essayer de trouver de temps en temps du orc ou gobelin pour manger et finir ma vie ici ..",
+            destination : 15
+        }
+        ]
+    },
+    {
+        id: 19,
+       description: "Une pancarte avec écrit 'Mort et trepas à celui qui descend' avec un escalier ou l'on ne voit pas le fond",
+        illustration: "assets/img/map.png",
+        imgalt: "Map",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je descends, je suis un grand garçon !",
+            destination : 17
+        },
+        {
+            text: "Je me pisse dessus, et préfère retourner derrière moi ..",
+            destination : 16
+        }
+        ]
+    },
+    {
+        id: 20,
+       description: "L'Orc, qui finallement était un Troll vous broie les côtes. En approchant devant vous, il vous regarde, et dit : 'Je s'appel Mari' puis vous fini au sol",
+        illustration: "assets/img/sword.png",
+        imgalt: "Sword",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Vous êtes mort, mais vous pouvez recommencer.",
+            destination : 0
+        },
+        {
+            text: "Vous êtes mort, mais vous pouvez lancer un jet de dés pour une résurrection",
+            destination : 0
+        }
+        ]
+    },
+    {
+        id: 21,
+       description: "Vous voyez un coffre, assez vieux, dans le coin de la pièce où vous êtes arrivé.",
+        illustration: "assets/img/treasure.png",
+        imgalt: "Treasure",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Ouvrir le coffre",
+            destination : 23
+        },
+        {
+            text: "Repartir derrière moi, tout ceci sens le piège à plein nez !",
+            destination : 17
+        }
+        ]
+    },
+    {
+        id: 22,
+       description: "En redescendant, vous vous appercevez que la porte du donjon est fermé. La porte qui étais à l'entrée n'existe plus non plus. Vous ne pouvez que monter ou descendre.",
+        illustration: "assets/img/tower.png",
+        imgalt: "Tower",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Remonter et finir par perdre la tête ...",
+            destination : 18
+        },
+        {
+            text: "Vous finissez par rester en bas en espérant que quelqu'un rentre dans le donjon ..",
+            destination : 0
+        }
+        ]
+    },
+    {
+        id: 23,
+       description: "Dans le coffre ce trouve la plus belle armure que vous n'avez jamais vue. Un parchemin est collé dans le fond du coffre, mais vous ne comprenez pas ce qu'il y a d'écrit.",
+        illustration: "assets/img/treasure.png",
+        imgalt: "Treasure",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je porte l'armure, bien entendu !",
+            destination : 24
+        },
+        {
+            text: "J'ai déjà vue cela dans des films, ça va m'explosé à la figure, je retourne sur mes pas.",
+            destination : 17
+        }
+        ]
+    },
+    {
+        id: 24,
+       description: "L'Orc, qui finallement était un Troll essaye de vous intimidez. Mais votre armure vous donne le pouvoir de le térasser.",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Après l'avoir vaincu, vous voyez une porte derrière lui et l'emprunté.",
+            destination : 16
+        },
+        {
+            text: "Victorieux, mais curieux, vous voulez recommencer votre partie pour voir plus de choix.",
+            destination : 0
         }
         ]
     },
