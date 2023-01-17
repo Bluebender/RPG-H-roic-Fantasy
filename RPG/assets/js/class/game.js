@@ -24,21 +24,17 @@ class Game {
         let question = document.getElementById('question');
         let choice1 = document.getElementById('choice1');
         let choice2 = document.getElementById('choice2');
-        let choice3 = document.getElementById('choice3');
-        let choice4 = document.getElementById('choice4');
         let img = document.getElementById('img');
         
         let firstScene = new Scene(0);
         
         let descriptionText = document.createTextNode(firstScene.description);
-        let illustrationimg = document.createTextNode(firstScene.illustration);
-        let illustrationText = document.createTextNode(firstScene.imgalt);
+        let illustrationimg = firstScene.illustration;
+        let illustrationText = firstScene.imgalt;
         let questionText = document.createTextNode(firstScene.question);
         let choice1Text = document.createTextNode(firstScene.choice1);
         let choice2Text = document.createTextNode(firstScene.choice2);
-        let choice3Text = document.createTextNode(firstScene.choice3);
-        let choice4Text = document.createTextNode(firstScene.choice4);
-        
+
         img.setAttribute("src", illustrationimg);
         img.setAttribute("alt", illustrationText);
         description.appendChild(descriptionText);
@@ -243,5 +239,6 @@ class Game {
     */
 
 
-}
+// }
+
 export { Game };
