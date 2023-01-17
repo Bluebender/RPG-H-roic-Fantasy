@@ -20,12 +20,12 @@ class Game {
     
     start() {
         
-        
-
         let description = document.getElementById('description');
         let question = document.getElementById('question');
         let choice1 = document.getElementById('choice1');
         let choice2 = document.getElementById('choice2');
+        let inputChoice1 = document.querySelector(" body section:nth-of-type(2) form ul li input:first-of-type ");
+        let inputChoice2 = document.querySelector(" body section:nth-of-type(2) form ul li input:last-of-type ");
         let img = document.getElementById('img');
         
         let firstScene = new Scene(0);
@@ -41,8 +41,8 @@ class Game {
 
         img.setAttribute("src", illustrationimg);
         img.setAttribute("alt", illustrationText);
-        choice1.setAttribute("attr", choice1Redirect);
-        choice2.setAttribute("attr", choice2Redirect);
+        inputChoice1.setAttribute("attr", choice1Redirect);
+        inputChoice2.setAttribute("attr", choice2Redirect);
         
         
         description.appendChild(descriptionText);
@@ -56,8 +56,6 @@ class Game {
     }
     
     DisplayScene(){
-        
-        for(let i = 0; i < this.#scenes.length; i++){
             
             let intro = document.getElementById('titreintro');
             let description = document.getElementById('description');
@@ -66,13 +64,15 @@ class Game {
             let choice2 = document.getElementById('choice2');
             let img = document.getElementById('img');
             
-            let introText = document.createTextNode(this.#scenes[i].id);
-            let descriptionText = document.createTextNode(this.#scenes[i].description);
-            let illustrationimg = document.createTextNode(this.#scenes[i].illustration);
-            let illustrationText = document.createTextNode(this.#scenes[i].imgalt);
-            let questionText = document.createTextNode(this.#scenes[i].question);
-            let choice1Text = document.createTextNode(this.#scenes[i].choice1);
-            let choice2Text = document.createTextNode(this.#scenes[i].choice2);
+            let sceneToDisplay = new Scene(choiceCheked);
+            
+            let introText = document.createTextNode(sceneToDisplay.id);
+            let descriptionText = document.createTextNode(sceneToDisplay.description);
+            let illustrationimg = sceneToDisplay.illustration;
+            let illustrationText = sceneToDisplay.imgalt;
+            let questionText = document.createTextNode(sceneToDisplay.question);
+            let choice1Text = document.createTextNode(sceneToDisplay.choice1);
+            let choice2Text = document.createTextNode(sceneToDisplay.choice2);
 
             intro.appendChild(introText);
             img.setAttribute("src", illustrationimg);
@@ -82,21 +82,22 @@ class Game {
             choice1.appendChild(choice1Text);
             choice2.appendChild(choice2Text);
 
-        }
     }
     
     Choose(){
         
-        let choice = document.querySelector("input[name='choice']");
-            
+        let choice = document.querySelectorAll("input");
+        console.log(choice);
             for(let i = 0; i < choice.length; i++){
-                if(choice.checked === true){
-                    let choiceCheked = choice.checked.getAttribute("attr");
+                console.log("choose boucle for");
+                if(choice[i].checked === true){
+                    let choiceCheked = choice[i].getAttribute("attr");
                     console.log(choiceCheked);
                     return choiceCheked;
                 }
                 
             }
+        
     }
 }
     
