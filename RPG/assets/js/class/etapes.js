@@ -51,7 +51,246 @@ let etapes = [
             destination : 6
         }
         ]
+    },
+    {
+        id: 3,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 4,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 5,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 6,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 7,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 8,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 9,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 10,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 11,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 12,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 13,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+    {
+        id: 14,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+     {
+        id: 15,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
+     {
+        id: 16,
+        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec le troll",
+            destination : 5
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
     }
+    
     
 ];
 
