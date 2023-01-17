@@ -54,6 +54,7 @@ let etapes = [
         }
         ]
     },
+    
     {   
         id: 3,
         description: "Visiblement elle ne bouge pas d'un poil l'épée est bloqué !",
@@ -63,7 +64,7 @@ let etapes = [
         choice : [
         {
             text: "Rempli de déception vous herrez sans but",
-            destination : 
+            destination : 14
         },
         {
             text: "Vous partez en courant en criant a l'aide",
@@ -236,14 +237,31 @@ let etapes = [
         choice : [
         {
             text: "",
-            destination : 
+            destination : 15
         },
         {
             text: "",
-            destination : 
+            destination : 15
         }
         ]
-    }
+    },
+     {
+        id: 14,
+        description: "Vous tombez sur un orc affamé pres a mangez n'importe quoi !",
+        illustration: "assets/img/orc.png",
+        imgalt: "Orc",
+        question: "Que souhaitez-vous faire ?",
+        choice : [
+        {
+            text: "Je tente une discussion avec l'orc",
+            destination : 8
+        },
+        {
+            text: "Je lui saute dessus pour lui faire la peau",
+            destination : 6
+        }
+        ]
+    },
     
     
 ];

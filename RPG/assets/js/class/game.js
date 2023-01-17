@@ -44,7 +44,6 @@ class Game {
         img.setAttribute("alt", illustrationText);
         choice1Input.setAttribute("attr", choice1Redirect);
         choice2Input.setAttribute("attr", choice2Redirect);
-
         description.appendChild(descriptionText);
         question.appendChild(questionText);
         choice1.appendChild(choice1Text);
@@ -54,6 +53,7 @@ class Game {
     }
 
     Choose(){
+
         let choice = document.querySelectorAll("input[name='choice']");
         let choiceCheked;
 
@@ -63,7 +63,7 @@ class Game {
             if(choice[i].checked === true){
                 choiceCheked = choice[i].getAttribute("attr");
                 console.log(choiceCheked)
-                
+
                 let description = document.getElementById('description');
                 let question = document.getElementById('question');
                 let choice1 = document.getElementById('choice1');
@@ -100,8 +100,34 @@ class Game {
                 
             }
         }
-        console.log(choiceCheked)
+
     }
+
 }
+    
+    
+    
+    // Sauvegarde de l'endroit où l'on est
+
+    /*
+    toJSON(){
+        let save = [];
+        
+        for(let i = 0; i < this.#scenes.length; i++){
+                let intro = this.#scenes[i];
+                let description = this.#scenes[i];
+                let question = this.#scenes[i];
+                let choice1 = this.#scenes[i];
+                let choice2 = this.#scenes[i];
+                let choice3 = this.#scenes[i];
+                let choice4 = this.#scenes[i];
+                let img = this.#scenes[i];
+                
+                save.push(intro, description, question, choice1, choice2, choice3, choice4, img);
+        }
+        
+       return JSON.stringify(save); 
+    }
+    */
 
 export { Game };
