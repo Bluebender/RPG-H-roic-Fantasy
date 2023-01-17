@@ -11,6 +11,6 @@ window.addEventListener("DOMContentLoaded", function(){
     let form = document.getElementById('form');
         form.addEventListener('submit', function(e){
             e.preventDefault();
-            e.Choose();
+            demarrer.Choose();
         })
 });

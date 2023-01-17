@@ -19,8 +19,6 @@ class Game {
     }
     
     start() {
-        
-        
 
         let description = document.getElementById('description');
         let question = document.getElementById('question');
@@ -43,8 +41,7 @@ class Game {
         img.setAttribute("alt", illustrationText);
         choice1.setAttribute("attr", choice1Redirect);
         choice2.setAttribute("attr", choice2Redirect);
-        
-        
+
         description.appendChild(descriptionText);
         question.appendChild(questionText);
         choice1.appendChild(choice1Text);
@@ -81,22 +78,20 @@ class Game {
             question.appendChild(questionText);
             choice1.appendChild(choice1Text);
             choice2.appendChild(choice2Text);
-
         }
     }
     
     Choose(){
-        
-        let choice = document.querySelector("input[name='choice']");
-            
-            for(let i = 0; i < choice.length; i++){
-                if(choice.checked === true){
-                    let choiceCheked = choice.checked.getAttribute("attr");
-                    console.log(choiceCheked);
-                    return choiceCheked;
-                }
-                
+        let choice = document.querySelectorAll("input[name='choice']");
+
+        for(let i = 0; i < choice.length; i++){
+            if(choice[i].checked === true){
+                console.log(choice[i])
+                let choiceCheked = choice[i].getAttribute("attr");
+                console.log(choice[i].getAttribute("attr"));
+                return choiceCheked;
             }
+        }
     }
 }
     
