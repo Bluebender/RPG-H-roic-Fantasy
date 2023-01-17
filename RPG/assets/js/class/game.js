@@ -82,23 +82,23 @@ class Game {
             choice2.appendChild(choice2Text);
         }
     }
-    
-<<<<<<< HEAD
-  
-=======
+
     Choose(){
         let choice = document.querySelectorAll("input[name='choice']");
 
         for(let i = 0; i < choice.length; i++){
-            if(choice[i].checked === true){
+            if(choice[i].checked === true)
+            {
                 let choiceCheked = choice[i].getAttribute("attr");
-                console.log(choiceCheked)
+                
+                
+                
                 return choiceCheked;
 
             }
         }
+        console.log(choiceCheked)
     }
->>>>>>> 4698d5ed197ed2e9f1eb0b0c463834776f55b74c
 }
     
     // Sauvegarde de l'endroit où l'on est
