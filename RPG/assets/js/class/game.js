@@ -78,6 +78,15 @@ class Game {
 
         }
     }
+    
+    Choose(){
+        let form = document.getElementById('form');
+        
+        form.addEventListener('submit', function(){
+            
+        })
+        
+    }
 }
     
     // Sauvegarde de l'endroit où l'on est

@@ -52,69 +52,77 @@ table {
   border-spacing: 0;
 }
 
-header {
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+html header {
   height: 20vh;
   background-color: #AE2012;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header > h1 {
+html header > h1 {
   Color: white;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
 }
-
-main {
+html header > h1 > span {
+  font-size: 7rem;
+}
+html main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-main > section {
+html main > section {
   height: 80vh;
   background-color: #EE9B00;
   padding: 20px;
 }
-main > section:nth-of-type(1) {
+html main > section:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main > section:nth-of-type(1) > h2 {
+html main > section:nth-of-type(1) > h2 {
   Color: #9B2226;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10vh;
   text-align: center;
 }
-main > section:nth-of-type(1) > p {
+html main > section:nth-of-type(1) > p {
   Color: #9B2226;
   font-size: 2rem;
   text-align: center;
 }
-main > section:nth-of-type(2) {
+html main > section:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main > section:nth-of-type(2) > form > h2 {
+html main > section:nth-of-type(2) #question {
   Color: #9B2226;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10vh;
   text-align: center;
 }
-main > section:nth-of-type(2) > form > ul > li {
+html main > section:nth-of-type(2) > form > ul > li {
   Color: #9B2226;
   font-size: 2rem;
   text-align: center;
   margin: 10px 0;
+  margin-top: 1rem;
 }
-main > section:nth-of-type(2) > form > ul > li:hover {
+html main > section:nth-of-type(2) > form > ul > li:hover {
   cursor: grab;
 }
-main > section:nth-of-type(2) > form > ul .btn-red {
+html main > section:nth-of-type(2) > form > ul .btn-red {
+  margin-top: 2rem;
   background-color: #ba0534;
   align-items: center;
   border: 1px solid transparent;
@@ -134,20 +142,20 @@ main > section:nth-of-type(2) > form > ul .btn-red {
   touch-action: manipulation;
   width: auto;
 }
-main > section:nth-of-type(2) > form > ul .btn-red:hover,
-main > section:nth-of-type(2) > form > ul .btn-red:focus {
+html main > section:nth-of-type(2) > form > ul .btn-red:hover,
+html main > section:nth-of-type(2) > form > ul .btn-red:focus {
   background-color: #B22222;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
-main > section:nth-of-type(2) > form > ul .btn-red:hover {
+html main > section:nth-of-type(2) > form > ul .btn-red:hover {
   transform: translateY(-1px);
 }
-main > section:nth-of-type(2) > form > ul .btn-red:active {
+html main > section:nth-of-type(2) > form > ul .btn-red:active {
   background-color: #B22222;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
-main > section:nth-of-type(3) > figure > img {
+html main > section:nth-of-type(3) > figure > img {
   color: #9B2226;
 }
 
