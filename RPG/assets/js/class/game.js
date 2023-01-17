@@ -103,6 +103,7 @@ class Game {
         
        return JSON.stringify(save); 
     }
+
 import { Scene } from './class/scene.js';
 import { SceneTest } from './class/scenetest.js';
 import { GameTest } from './class/gametest.js';
