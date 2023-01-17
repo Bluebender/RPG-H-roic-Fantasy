@@ -7,7 +7,7 @@ let etapes = [
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Marcharcher pour essayer de trouver du monde",
+            text: "Marcher pour essayer de trouver du monde",
             destination : 1
         },
         {
@@ -43,8 +43,8 @@ let etapes = [
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Je tente une discussion avec l'orc",
+            destination : 8
         },
         {
             text: "Je lui saute dessus pour lui faire la peau",
@@ -52,32 +52,32 @@ let etapes = [
         }
         ]
     },
-    {
+    {   
         id: 3,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
+        description: "Visiblement elle ne bouge pas d'un poil l'épée est bloqué !",
+        illustration: "assets/img/sword.png",
+        imgalt: "Epée",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Rempli de déception vous herrez sans but",
+            destination : 
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "Vous partez en courant en criant a l'aide",
+            destination : 2
         }
         ]
     },
     {
         id: 4,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        description: "Vous tombez sur un orc affamé pres a mangez n'importe quoi !",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
+            text: "Je tente une discussion avec l'orc",
             destination : 5
         },
         {
@@ -86,37 +86,38 @@ let etapes = [
         }
         ]
     },
+    
     {
         id: 5,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        description: "L'orc surpris que vous n'ayez pas prit peur de lui vous parle comme a un ami vous lui parlez de votre perte de mémoire et l'orc vous raconte qu'il cherche une épée magique" ",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Je pars retenter de récuperer l'épée",
+            destination : 12
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "Je releve a l'orc la direction a suivre",
+            destination : 11
         }
         ]
     },
     {
         id: 6,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        description: "L'orc surpris tombe au sol et perd son arme",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Récuperez son arme et l'abattre",
+            destination : 10
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "Le tuer a la force de vos poings",
+            destination : 10
         }
         ]
     },
@@ -139,69 +140,65 @@ let etapes = [
     },
     {
         id: 8,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
-        question: "Que souhaitez-vous faire ?",
+        description: "L'orc, affamée vous saute dessus, sans défense vous luttez pour votre survie ,rien a voir mais il dit se nommer Mari",
+        illustration: "assets/img/cross-swords.png",
+        imgalt: "cross-swords",
+        question: "Quoi vous allez quand même pas deja mourrir ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Je tente de fuir",
+            destination : 9
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "Je me battrai jusqu'a la fin",
+            destination : 9
         }
         ]
     },
     {
         id: 9,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        description: "Il n'y avait plus rien a faire ! Mari vous dévore tout cru !",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
-        question: "Que souhaitez-vous faire ?",
+        question: "Fin !",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
-        },
-        {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "Recommencez l'histoire ?",
+            destination : 0
         }
         ]
     },
     {
         id: 10,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
+        description: "Vous voila maintenant en possession d'une epée d'orc !",
+        illustration: "assets/img/sword.png",
+        imgalt: "sword",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "",
+            destination : 
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "",
+            destination : 
         }
         ]
     },
     {
         id: 11,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
+        description: "L'orc pour vous remerciez vous fait don de son épée",
+        illustration: "assets/img/sword.png",
+        imgalt: "sword",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "",
+            destination : 
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "",
+            destination : 
         }
         ]
     },
