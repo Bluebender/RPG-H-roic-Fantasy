@@ -31,7 +31,7 @@ class Game {
         let firstScene = new Scene(0);
         
         let descriptionText = document.createTextNode(firstScene.description);
-        let illustrationimg = document.createTextNode(firstScene.illustration);
+        let illustrationimg = firstScene.illustration;
         let illustrationText = document.createTextNode(firstScene.imgalt);
         let questionText = document.createTextNode(firstScene.question);
         let choice1Text = document.createTextNode(firstScene.choice1);

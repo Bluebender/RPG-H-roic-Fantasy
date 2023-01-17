@@ -1,6 +1,6 @@
 let etapes = [
     {
-        id: "0",
+        id: 0,
         description: "Vous êtes un chevalier sans cheval et vous avez perdu la mémoire. Vous vous retrouver dans les bois sans arme",
         illustration: "assets/img/door.png",
         imgalt: "Porte",
@@ -10,7 +10,7 @@ let etapes = [
     },
     
     {   
-        id: "1",
+        id: 1,
         description: "En marchant vous trouvez une épée enfoncée dans un rocher",
         illustration: "assets/img/sword.png",
         imgalt: "Epée",
@@ -20,7 +20,7 @@ let etapes = [
     },
     
     {
-        id: "2",
+        id: 2,
         description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
