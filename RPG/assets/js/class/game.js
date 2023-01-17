@@ -88,14 +88,16 @@ class Game {
     Choose(){
         
         let choice = document.querySelector("input[name='choice']");
-            
+           console.log(choice.checked); 
             for(let i = 0; i < choice.length; i++){
+                
                 if(choice.checked === true){
+                    
                     let choiceCheked = choice.checked.getAttribute("attr");
                     console.log(choiceCheked);
                     return choiceCheked;
+                    
                 }
-                
             }
     }
 }

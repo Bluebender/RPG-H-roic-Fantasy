@@ -61,7 +61,7 @@ let etapes = [
         choice : [
         {
             text: "Rempli de déception vous herrez sans but",
-            destination : 
+            destination : 18
         },
         {
             text: "Vous partez en courant en criant a l'aide",
@@ -89,7 +89,7 @@ let etapes = [
     
     {
         id: 5,
-        description: "L'orc surpris que vous n'ayez pas prit peur de lui vous parle comme a un ami vous lui parlez de votre perte de mémoire et l'orc vous raconte qu'il cherche une épée magique" ",
+        description: "L'orc surpris que vous n'ayez pas prit peur de lui vous parle comme a un ami vous lui parlez de votre perte de mémoire et l'orc vous raconte qu'il cherche une épée magique" ,
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
@@ -176,12 +176,12 @@ let etapes = [
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "",
-            destination : 
+            text: "18",
+            destination : 18
         },
         {
-            text: "",
-            destination : 
+            text: "18",
+            destination : 18
         }
         ]
     },
@@ -193,12 +193,12 @@ let etapes = [
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "",
-            destination : 
+            text: "18",
+            destination : 18
         },
         {
-            text: "",
-            destination : 
+            text: "18",
+            destination : 18
         }
         ]
     },
