@@ -240,7 +240,7 @@ let etapes = [
             destination : 15
         },
         {
-            text: "Passer par la grande porte en criant 'YYYYYEEEEEEPPPPPPPAAAAAA'",
+            text: "Passer par la grande porte en criant 'YEEEPAAAA'",
             destination : 16
         }
         ]
