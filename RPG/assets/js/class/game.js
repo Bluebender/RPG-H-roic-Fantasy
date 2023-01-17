@@ -38,6 +38,7 @@ class Game {
         let choice1Redirect = firstScene.redirection1;
         let choice2Text = document.createTextNode(firstScene.choice2);
         let choice2Redirect = firstScene.redirection2;
+        
 
         img.setAttribute("src", illustrationimg);
         img.setAttribute("alt", illustrationText);
@@ -47,13 +48,10 @@ class Game {
         question.appendChild(questionText);
         choice1.appendChild(choice1Text);
         choice2.appendChild(choice2Text);
+        
+       
     }
 
-    ActuallyScene(scene){
-        this.#scenes.push(scene);
-    }
-
-    
     Choose(){
 
         let choice = document.querySelectorAll("input[name='choice']");
@@ -101,6 +99,7 @@ class Game {
                 question.appendChild(questionText);
                 choice1.appendChild(choice1Text);
                 choice2.appendChild(choice2Text);
+                
             }
         }
     }

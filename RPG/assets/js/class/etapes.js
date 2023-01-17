@@ -9,6 +9,7 @@ let etapes = [
         {
             text: "Marcher pour essayer de trouver du monde",
             destination : 1
+            // epee legendaire
         },
         {
             text: "Courrir en criant",
@@ -31,6 +32,7 @@ let etapes = [
         {
             text: "Passer mon chemin, cette épée doit appartenir à quelqu'un",
             destination : 4
+            // epee legendaire
         }
         ]
     },
@@ -62,7 +64,7 @@ let etapes = [
         choice : [
         {
             text: "Rempli de déception vous herrez sans but",
-            destination : 18
+            destination : 14
         },
         {
             text: "Vous partez en courant en criant a l'aide",
@@ -71,6 +73,7 @@ let etapes = [
         ]
     },
     {
+        // epee legendaire
         id: 4,
         description: "Vous tombez sur un orc affamé pres a mangez n'importe quoi !",
         illustration: "assets/img/orc.png",
@@ -89,6 +92,7 @@ let etapes = [
     },
     
     {
+        // epee legendaire
         id: 5,
         description: "L'orc surpris que vous n'ayez pas prit peur de lui vous parle comme a un ami vous lui parlez de votre perte de mémoire et l'orc vous raconte qu'il cherche une épée magique" ,
         illustration: "assets/img/orc.png",
@@ -100,7 +104,7 @@ let etapes = [
             destination : 12
         },
         {
-            text: "Je releve a l'orc la direction a suivre",
+            text: "Je revele a l'orc la direction a suivre",
             destination : 11
         }
         ]
@@ -130,7 +134,7 @@ let etapes = [
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
+            text: "Je tente une discussion avec l'orc",
             destination : 5
         },
         {
@@ -166,6 +170,10 @@ let etapes = [
         {
             text: "Recommencez l'histoire ?",
             destination : 0
+        },
+        {
+            text: "Jetter votre pc par la fenêtre",
+            destination : 0
         }
         ]
     },
@@ -176,13 +184,13 @@ let etapes = [
         imgalt: "sword",
         question: "Que souhaitez-vous faire ?",
         choice : [
-        {
-            text: "18",
-            destination : 18
+         {
+            text: "Je cherche une sortie a cette forêt",
+            destination : 13
         },
         {
-            text: "18",
-            destination : 18
+            text: "Je part a la poursuite de ma destiné",
+            destination : 13
         }
         ]
     },
@@ -193,60 +201,60 @@ let etapes = [
         imgalt: "sword",
         question: "Que souhaitez-vous faire ?",
         choice : [
-        {
-            text: "18",
-            destination : 18
+         {
+            text: "Je cherche une sortie a cette forêt",
+            destination : 13
         },
         {
-            text: "18",
-            destination : 18
+            text: "Je part a la poursuite de ma destiné",
+            destination : 13
         }
         ]
     },
     {
         id: 12,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
-        question: "Que souhaitez-vous faire ?",
+        description: "Au moment ou vous prenez l'épée dans vos mains, le rocher se brise et l'épée se libere",
+        illustration: "assets/img/sword.png",
+        imgalt: "Sword",
+        question: "Votre destin sera grand !",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Je cherche une sortie a cette forêt",
+            destination : 13
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "Je part a la poursuite de ma destiné",
+            destination : 13
         }
         ]
     },
     {
         id: 13,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+       description: "Vous voila devant une grande tour en plein milieu de la forêt !",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "",
+            destination : 15
         },
         {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
+            text: "",
+            destination : 15
         }
         ]
     },
-    {
+     {
         id: 14,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
+        description: "Vous tombez sur un orc affamé pres a mangez n'importe quoi !",
         illustration: "assets/img/orc.png",
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
         choice : [
         {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
+            text: "Je tente une discussion avec l'orc",
+            destination : 8
         },
         {
             text: "Je lui saute dessus pour lui faire la peau",
@@ -254,40 +262,8 @@ let etapes = [
         }
         ]
     },
-     {
-        id: 15,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
-        question: "Que souhaitez-vous faire ?",
-        choice : [
-        {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
-        },
-        {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
-        }
-        ]
-    },
-     {
-        id: 16,
-        description: "Quelqu'un a entendu vos cris. Malheureusement c'est un orc qui n'a pas manger depuis 3 jours",
-        illustration: "assets/img/orc.png",
-        imgalt: "Orc",
-        question: "Que souhaitez-vous faire ?",
-        choice : [
-        {
-            text: "Je tente une discussion avec le troll",
-            destination : 5
-        },
-        {
-            text: "Je lui saute dessus pour lui faire la peau",
-            destination : 6
-        }
-        ]
-    }
+    
+    
 ];
 
 export { etapes };
