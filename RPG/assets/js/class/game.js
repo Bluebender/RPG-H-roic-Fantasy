@@ -99,6 +99,8 @@ class Game {
                 question.innerHTML="";
                 choice1.innerHTML="";
                 choice2.innerHTML="";
+                choice1Input.checked=false;
+                choice2Input.checked=false;
                 
                 description.appendChild(descriptionText);
                 question.appendChild(questionText);
@@ -109,7 +111,6 @@ class Game {
                 this.#currentscenes = sceneToDisplay;
             }
         }
-
     }
     
     save (){
