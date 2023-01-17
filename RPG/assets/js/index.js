@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
     let demarrer = new Game();
     demarrer.start();
+   
 
     let form = document.getElementById('form');
         form.addEventListener('submit', function(e)
@@ -14,6 +15,7 @@ window.addEventListener("DOMContentLoaded", function(){
             e.preventDefault();
 
             demarrer.Choose();
-        })
-
+             demarrer.save();
+        });
+    
 });

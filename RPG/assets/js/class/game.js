@@ -5,7 +5,7 @@ import { GameTest } from './gametest.js';
 class Game {
     
     #scenes;
-    
+    #currentscenes;
     constructor(scenes){
         this.#scenes = [];
     }
@@ -16,6 +16,13 @@ class Game {
     
     set scenes(scenes) {
         this.#scenes = scenes;
+    }
+    get currentscenes () {
+        return this.#currentscenes;
+    }
+    
+    set currentscenes(currentscenes) {
+        this.#currentscenes = currentscenes;
     }
     
     start() {
@@ -56,7 +63,7 @@ class Game {
 
         let choice = document.querySelectorAll("input[name='choice']");
         let choiceCheked;
-
+    
         for(let i = 0; i < choice.length; i++){
 
 
@@ -72,7 +79,7 @@ class Game {
                 let choice2Input = document.getElementById('choix2');
                 let img = document.getElementById('img');
                 
-                let sceneToDisplay = new Scene(choiceCheked);
+                let sceneToDisplay = new Scene (choiceCheked);
                 
                 let descriptionText = document.createTextNode(sceneToDisplay.description);
                 let illustrationimg = sceneToDisplay.illustration;
@@ -98,36 +105,29 @@ class Game {
                 choice1.appendChild(choice1Text);
                 choice2.appendChild(choice2Text);
                 
+                
+                this.#currentscenes = sceneToDisplay;
             }
         }
 
     }
+    
+    save (){
+        sessionStorage.setItem("mygame", this.toJSON());
+    }
+    
+    toJSON () {
+
+    let save = 
+    {
+        currentChoice : this.#currentscenes.id,
+    };
+
+    return JSON.stringify(save);
+    
+    }
 
 }
     
-    
-    
-    // Sauvegarde de l'endroit où l'on est
-
-    /*
-    toJSON(){
-        let save = [];
-        
-        for(let i = 0; i < this.#scenes.length; i++){
-                let intro = this.#scenes[i];
-                let description = this.#scenes[i];
-                let question = this.#scenes[i];
-                let choice1 = this.#scenes[i];
-                let choice2 = this.#scenes[i];
-                let choice3 = this.#scenes[i];
-                let choice4 = this.#scenes[i];
-                let img = this.#scenes[i];
-                
-                save.push(intro, description, question, choice1, choice2, choice3, choice4, img);
-        }
-        
-       return JSON.stringify(save); 
-    }
-    */
 
 export { Game };
