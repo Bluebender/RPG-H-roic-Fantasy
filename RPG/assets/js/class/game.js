@@ -34,11 +34,7 @@ class Game {
         
         let descriptionText = document.createTextNode(firstScene.description);
         let illustrationimg = firstScene.illustration;
-<<<<<<< HEAD
-        let illustrationText = document.createTextNode(firstScene.imgalt);
-=======
         let illustrationText = firstScene.imgalt;
->>>>>>> 03219a7469238b5a233cd92cd37d15b383fe6484
         let questionText = document.createTextNode(firstScene.question);
         let choice1Text = document.createTextNode(firstScene.choice1);
         let choice2Text = document.createTextNode(firstScene.choice2);
@@ -85,6 +81,15 @@ class Game {
             choice2.appendChild(choice2Text);
 
         }
+    }
+    
+    Choose(){
+        let form = document.getElementById('form');
+        
+        form.addEventListener('submit', function(){
+            
+        })
+        
     }
 }
     
