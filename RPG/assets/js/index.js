@@ -12,8 +12,7 @@ window.addEventListener("DOMContentLoaded", function(){
         form.addEventListener('submit', function(e)
         {
             e.preventDefault();
-            e.Choose();
-        });
-        
-        
+
+            demarrer.Choose();
+        })
 });

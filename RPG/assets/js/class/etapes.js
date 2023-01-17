@@ -287,8 +287,6 @@ let etapes = [
         }
         ]
     }
-    
-    
 ];
 
 export { etapes };
