@@ -24,6 +24,8 @@ class Game {
         let question = document.getElementById('question');
         let choice1 = document.getElementById('choice1');
         let choice2 = document.getElementById('choice2');
+        let choice1Input = document.getElementById('choix1');
+        let choice2Input = document.getElementById('choix2');
         let img = document.getElementById('img');
         
         let firstScene = new Scene(0);
@@ -39,8 +41,8 @@ class Game {
 
         img.setAttribute("src", illustrationimg);
         img.setAttribute("alt", illustrationText);
-        choice1.setAttribute("attr", choice1Redirect);
-        choice2.setAttribute("attr", choice2Redirect);
+        choice1Input.setAttribute("attr", choice1Redirect);
+        choice2Input.setAttribute("attr", choice2Redirect);
 
         description.appendChild(descriptionText);
         question.appendChild(questionText);
@@ -86,10 +88,10 @@ class Game {
 
         for(let i = 0; i < choice.length; i++){
             if(choice[i].checked === true){
-                console.log(choice[i])
                 let choiceCheked = choice[i].getAttribute("attr");
-                console.log(choice[i].getAttribute("attr"));
+                console.log(choiceCheked)
                 return choiceCheked;
+
             }
         }
     }
