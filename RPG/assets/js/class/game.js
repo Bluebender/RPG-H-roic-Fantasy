@@ -242,5 +242,5 @@ class Game {
     */
 
 
-}
+
 export { Game };
