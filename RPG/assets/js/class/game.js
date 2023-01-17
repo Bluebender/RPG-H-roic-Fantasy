@@ -53,35 +53,6 @@ class Game {
     ActuallyScene(scene){
         this.#scenes.push(scene);
     }
-    
-    DisplayScene(){
-        
-        for(let i = 0; i < this.#scenes.length; i++){
-            
-            let intro = document.getElementById('titreintro');
-            let description = document.getElementById('description');
-            let question = document.getElementById('question');
-            let choice1 = document.getElementById('choice1');
-            let choice2 = document.getElementById('choice2');
-            let img = document.getElementById('img');
-            
-            let introText = document.createTextNode(this.#scenes[i].id);
-            let descriptionText = document.createTextNode(this.#scenes[i].description);
-            let illustrationimg = document.createTextNode(this.#scenes[i].illustration);
-            let illustrationText = document.createTextNode(this.#scenes[i].imgalt);
-            let questionText = document.createTextNode(this.#scenes[i].question);
-            let choice1Text = document.createTextNode(this.#scenes[i].choice1);
-            let choice2Text = document.createTextNode(this.#scenes[i].choice2);
-
-            intro.appendChild(introText);
-            img.setAttribute("src", illustrationimg);
-            img.setAttribute("alt", illustrationText);
-            description.appendChild(descriptionText);
-            question.appendChild(questionText);
-            choice1.appendChild(choice1Text);
-            choice2.appendChild(choice2Text);
-        }
-    }
 
     Choose(){
         let choice = document.querySelectorAll("input[name='choice']");
