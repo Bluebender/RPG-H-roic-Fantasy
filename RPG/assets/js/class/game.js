@@ -239,6 +239,4 @@ class Game {
     */
 
 
-// }
-
 export { Game };
