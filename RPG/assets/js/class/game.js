@@ -19,6 +19,8 @@ class Game {
     }
     
     start(){
+        
+        
 
         let description = document.getElementById('description');
         let question = document.getElementById('question');

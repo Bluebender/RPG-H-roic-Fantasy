@@ -98,21 +98,54 @@ main > section:nth-of-type(2) {
   justify-content: center;
   align-items: center;
 }
-main > section:nth-of-type(2) > h2 {
+main > section:nth-of-type(2) > form > h2 {
   Color: #9B2226;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10vh;
   text-align: center;
 }
-main > section:nth-of-type(2) > ul > li {
+main > section:nth-of-type(2) > form > ul > li {
   Color: #9B2226;
   font-size: 2rem;
   text-align: center;
   margin: 10px 0;
 }
-main > section:nth-of-type(2) > ul > li:hover {
+main > section:nth-of-type(2) > form > ul > li:hover {
   cursor: grab;
+}
+main > section:nth-of-type(2) > form > ul .btn-red {
+  background-color: #ba0534;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  touch-action: manipulation;
+  width: auto;
+}
+main > section:nth-of-type(2) > form > ul .btn-red:hover,
+main > section:nth-of-type(2) > form > ul .btn-red:focus {
+  background-color: #B22222;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+main > section:nth-of-type(2) > form > ul .btn-red:hover {
+  transform: translateY(-1px);
+}
+main > section:nth-of-type(2) > form > ul .btn-red:active {
+  background-color: #B22222;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
 }
 main > section:nth-of-type(3) > figure > img {
   color: #9B2226;
