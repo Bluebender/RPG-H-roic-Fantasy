@@ -82,10 +82,7 @@ class Game {
             choice2.appendChild(choice2Text);
         }
     }
-    
-<<<<<<< HEAD
-  
-=======
+
     Choose(){
         let choice = document.querySelectorAll("input[name='choice']");
         let choiceCheked;
@@ -133,7 +130,6 @@ class Game {
             }
         }
     }
->>>>>>> 4698d5ed197ed2e9f1eb0b0c463834776f55b74c
 }
     
     // Sauvegarde de l'endroit où l'on est
