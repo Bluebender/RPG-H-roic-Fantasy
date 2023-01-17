@@ -1,6 +1,9 @@
 @import "vars";
 @import "reset";
 
+html {
+    overflow-y:hidden;
+    overflow-x:hidden;
 header {
     height: 20vh;
     background-color: $color4;
@@ -9,8 +12,11 @@ header {
     align-items: center;
     >h1 {
         Color: white;
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: bold;
+        > span {
+             font-size: 7rem;
+        }
 
     }
 }
@@ -45,27 +51,31 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            >form {
+           
                 
-                >h2 {
+                #question {
                     Color: $color5;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     font-weight: bold;
                     margin-bottom: 10vh;
                     text-align: center;
                 }
+                >form {
+                    
                 >ul {
                     >li {
                         Color: $color5;
                         font-size: 2rem;
                         text-align: center;
                         margin: 10px 0;
+                        margin-top:1rem;
                         &:hover {
                             cursor: grab;
                         }
                     }
                     
                     .btn-red {
+                      margin-top:2rem;
                       background-color: #ba0534;
                       align-items: center;
                       border: 1px solid transparent;
@@ -115,4 +125,5 @@ main {
         }
 
     }
+}
 }

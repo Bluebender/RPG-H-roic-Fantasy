@@ -18,7 +18,7 @@ class Game {
         this.#scenes = scenes;
     }
     
-    start(){
+    start() {
         
         
 
