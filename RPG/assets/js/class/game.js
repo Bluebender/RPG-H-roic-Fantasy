@@ -3,6 +3,7 @@ import { SceneTest } from './class/scenetest.js';
 import { GameTest } from './class/gametest.js';
 
 class Game {
+    
     #scenes;
     
     constructor(scenes){
@@ -85,34 +86,11 @@ class Game {
     
     
     // Sauvegarde de l'endroit où l'on est
-    
-<<<<<<< HEAD
-    toJSON(){
-        let save = [];
-        
-        for(let i = 0; i < this.#scenes.length; i++){
-                let intro = this.#scenes[i];
-                let description = this.#scenes[i];
-                let question = this.#scenes[i];
-                let choice1 = this.#scenes[i];
-                let choice2 = this.#scenes[i];
-                let choice3 = this.#scenes[i];
-                let choice4 = this.#scenes[i];
-                let img = this.#scenes[i];
-                
-                save.push(intro, description, question, choice1, choice2, choice3, choice4, img);
-        }
-        
-        
-        
-       return JSON.stringify(save); 
-    }
-=======
+ 
     // toJSON(){
+    //     let save = [];
         
-<<<<<<< HEAD
     //     for(let i = 0; i < this.#scenes.length; i++){
-    //         let save = {
     //             let intro = this.#scenes[i];
     //             let description = this.#scenes[i];
     //             let question = this.#scenes[i];
@@ -121,19 +99,15 @@ class Game {
     //             let choice3 = this.#scenes[i];
     //             let choice4 = this.#scenes[i];
     //             let img = this.#scenes[i];
-    //         }
-            
-    //         return JSON.stringify(save);
+                
+    //             save.push(intro, description, question, choice1, choice2, choice3, choice4, img);
     //     }
-=======
-        let save = {
-            
-        }
-            
-            return JSON.stringify(save);
->>>>>>> d0b97e412569f38da067123e4aff28569b17403c
         
+        
+        
+    //   return JSON.stringify(save); 
     // }
->>>>>>> 3679a42ced8617f534efcfb15e84602a4920f440
+
+
 }
 export { Game };
