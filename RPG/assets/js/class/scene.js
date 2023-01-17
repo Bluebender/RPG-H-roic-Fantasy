@@ -1,4 +1,4 @@
-import { data } from './data.js'
+import { etapes } from './etapes.js'
 
 class Scene {
     #id;
@@ -14,13 +14,14 @@ class Scene {
     constructor(id) {
         
         this.#id = id;
-        this.#description = data[id].description;
-        this.#illustration = data[id].illustration;
-        this.#question = data[id].question;
-        this.#choice1 = date[id].choice1;
-        this.#choice2 = data[id].choice2;
-        this.#choice3 = data[id].choice3;
-        this.#choice4 = data[id].choice4;
+        this.#description = etapes[id].description;
+        this.#illustration = etapes[id].illustration;
+        this.#imgalt = etapes[id].imgalt;
+        this.#question = etapes[id].question;
+        this.#choice1 = etapes[id].choice1;
+        this.#choice2 = etapes[id].choice2;
+        this.#choice3 = etapes[id].choice3;
+        this.#choice4 = etapes[id].choice4;
     }
     get id() {
         return this.#id;

@@ -1,6 +1,5 @@
-import { Scene } from './class/scene.js';
-import { SceneTest } from './class/scenetest.js';
-import { GameTest } from './class/gametest.js';
+import { Scene } from './scene.js' ;
+import { etapes } from './etapes.js' ;
 
 class Game {
     
@@ -19,7 +18,9 @@ class Game {
     }
     
     start(){
-        let intro = document.getElementById('titreintro');
+        
+        
+        let id = document.getElementById('titreintro');
         let description = document.getElementById('description');
         let question = document.getElementById('question');
         let choice1 = document.getElementById('choice1');
@@ -28,7 +29,7 @@ class Game {
         let choice4 = document.getElementById('choice4');
         let img = document.getElementById('img');
         
-        let introText = document.createTextNode(this.#scenes[0].titreIntro);
+       
         let descriptionText = document.createTextNode(this.#scenes[0].description);
         let illustrationimg = document.createTextNode(this.#scenes[0].illustration);
         let illustrationText = document.createTextNode(this.#scenes[0].imgalt);
@@ -38,12 +39,13 @@ class Game {
         let choice3Text = document.createTextNode(this.#scenes[0].choice3);
         let choice4Text = document.createTextNode(this.#scenes[0].choice4);
         
-        intro.appendChild(introText);
+     
         img.setAttribute("src", illustrationimg);
         img.setAttribute("alt", illustrationText);
         description.appendChild(descriptionText);
         question.appendChild(questionText);
         choice1.appendChild(choice1Text);
+        choice2.appendChild(choice2Text);
     }
 
     ActuallyScene(scene){
@@ -63,15 +65,13 @@ class Game {
             let choice4 = document.getElementById('choice4');
             let img = document.getElementById('img');
             
-            let introText = document.createTextNode(this.#scenes[i].titreIntro);
+            let introText = document.createTextNode(this.#scenes[i].id);
             let descriptionText = document.createTextNode(this.#scenes[i].description);
             let illustrationimg = document.createTextNode(this.#scenes[i].illustration);
             let illustrationText = document.createTextNode(this.#scenes[i].imgalt);
             let questionText = document.createTextNode(this.#scenes[i].question);
             let choice1Text = document.createTextNode(this.#scenes[i].choice1);
             let choice2Text = document.createTextNode(this.#scenes[i].choice2);
-            let choice3Text = document.createTextNode(this.#scenes[i].choice3);
-            let choice4Text = document.createTextNode(this.#scenes[i].choice4);
             
             intro.appendChild(introText);
             img.setAttribute("src", illustrationimg);
@@ -79,35 +79,8 @@ class Game {
             description.appendChild(descriptionText);
             question.appendChild(questionText);
             choice1.appendChild(choice1Text);
+            choice2.appendChild(choice2Text);
             
-            if (this.#scenes[i].choice4 === "null")
-            {
-                choice4.classList.add("null");
-            }
-            else
-            {
-                choice4.classList.remove("null");
-                choice4.appendChild(choice4Text);
-            }
-            
-            if (this.#scenes[i].choice3 === "null")
-            {
-                choice3.classList.add("null");
-            }
-            else
-            {
-                choice4.classList.remove("null");
-                choice3.appendChild(choice3Text);
-            }
-            if (this.#scenes[i].choice2 === "null")
-            {
-                choice2.classList.add("null");
-            }
-            else
-            {
-                choice4.classList.remove("null");
-                choice2.appendChild(choice2Text);
-            }
         }
         
     }
