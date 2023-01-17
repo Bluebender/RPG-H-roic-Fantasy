@@ -97,6 +97,7 @@ class Game {
                 description.appendChild(descriptionText);
                 question.appendChild(questionText);
                 choice1.appendChild(choice1Text);
+                
                 choice2.appendChild(choice2Text);
             }
         }
