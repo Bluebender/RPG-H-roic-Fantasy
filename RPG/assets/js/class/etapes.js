@@ -6,9 +6,7 @@ let etapes = [
         imgalt: "Porte",
         question: "Que souhaitez-vous faire ?",
         choice1: "Marcharcher pour essayer de trouver du monde",
-        choice2: "Courrir en criant",
-        choice3: "Chercher Robin",
-        choice4: "Rester assis à rien faire"
+        choice2: "Courrir en criant"
     },
     
     {   
@@ -18,9 +16,7 @@ let etapes = [
         imgalt: "Epée",
         question: "Que souhaitez-vous faire ?",
         choice1: "Attraper l'épée",
-        choice2: "Passer mon chemin, cette épée doit appartenir à quelqu'un",
-        choice3: "null",
-        choice4: "null"
+        choice2: "Passer mon chemin, cette épée doit appartenir à quelqu'un"
     },
     
     {
@@ -30,9 +26,7 @@ let etapes = [
         imgalt: "Orc",
         question: "Que souhaitez-vous faire ?",
         choice1: "Je tente une discussion avec le troll",
-        choice2: "Je lui saute dessus pour lui faire la peau",
-        choice3: "Je pars en courant",
-        choice4: "null"
+        choice2: "Je lui saute dessus pour lui faire la peau"
 
     }
     
