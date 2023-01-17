@@ -4,5 +4,9 @@ import { etapes } from './class/etapes.js';
 
 
 window.addEventListener("DOMContentLoaded", function(){
-  
+
+    let demarrer = new Game();
+    demarrer.start();
+    
+    
 });
