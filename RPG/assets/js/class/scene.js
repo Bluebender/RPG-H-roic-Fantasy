@@ -16,6 +16,7 @@ class Scene {
         this.#id = id;
         this.#description = etapes[id].description;
         this.#illustration = etapes[id].illustration;
+        this.#imgalt = etapes[id].imgalt;
         this.#question = etapes[id].question;
         this.#choice1 = etapes[id].choice1;
         this.#choice2 = etapes[id].choice2;
