@@ -52,6 +52,7 @@ let etapes = [
         }
         ]
     },
+    
     {   
         id: 3,
         description: "Visiblement elle ne bouge pas d'un poil l'épée est bloqué !",
